@@ -19,3 +19,9 @@ spec:
         image: nginx:1.15.4
         ports:
         - containerPort: 80
+        resources:
+          requests:
+            cpu: 20m
+          limits:
+            cpu: 30m
+      
