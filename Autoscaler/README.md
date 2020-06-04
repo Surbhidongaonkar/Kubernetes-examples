@@ -1,0 +1,6 @@
+- create a deployment
+- create a nodeport service to expose the deployment
+- create hpa
+- watch resources like pods/ hpa and check surrent replicas
+- put some load on nginx server (siege -q -c 5 -t 2m  http://<nodeip>:<nodeport>)
+- check replicas- if autoscaler is working
